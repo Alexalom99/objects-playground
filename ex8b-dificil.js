@@ -6,7 +6,13 @@
  */
 
 function countPeopleFromCountry(people, country) {
-
+    let count = 0;
+    for (let person of people) {
+        if (person.pais == country) {
+            count += 1;
+        }
+    }
+    return count;
 }
 
 // Ejemplo de uso:

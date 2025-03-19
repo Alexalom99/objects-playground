@@ -8,7 +8,18 @@
  */
 
 function detectPureColor(rgb) {
-
+    if (rgb.r == 255 && rgb.g != 255 && rgb.b != 255) {
+        return "red";
+    }
+    else if (rgb.r != 255 && rgb.g == 255 && rgb.b != 255) {
+        return "green";
+    }
+    else if (rgb.r != 255 && rgb.g != 255 && rgb.b == 255) {
+        return "blue";
+    }
+    else {
+        return "";
+    }
 }
 
 console.log(detectPureColor({ r: 255, g: 0, b: 0 })); // "red"

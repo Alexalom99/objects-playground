@@ -10,7 +10,12 @@
  */
 
 function getOldestAge(person1, person2) {
-
+    if (person1.age > person2.age) {
+        return person1.age;
+    }
+    else {
+        return person2.age;
+    }
 }
 
 // Ejemplo de uso:

@@ -6,6 +6,11 @@
  */
 
 function countHobbies(person) {
+    let count = 0;
+    for (hobbie of person.hobbies) {
+        count += 1;
+    }
+    return count;
 
 }
 

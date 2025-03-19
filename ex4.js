@@ -13,3 +13,5 @@ let estudiante = {
  * 
  * Escribe una sentencia JavaScript que permita mostrar el nombre de su mascota por console.log
  */
+
+console.log(estudiante.mascota.nombre);
